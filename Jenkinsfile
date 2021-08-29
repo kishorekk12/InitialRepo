@@ -31,4 +31,11 @@ pipeline {
     }
 
   }
+  post{
+    always{
+    }
+    success{
+      echo 'success
+  }
+    
 }
