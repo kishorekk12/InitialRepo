@@ -33,6 +33,7 @@ pipeline {
   }
   post{
     always{
+       echo 'job completed'
     }
     success{
       echo 'success'
