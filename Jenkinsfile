@@ -37,5 +37,5 @@ pipeline {
     success{
       echo 'success'
   }
-    
+  }   
 }
