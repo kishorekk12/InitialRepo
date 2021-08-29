@@ -35,7 +35,7 @@ pipeline {
     always{
     }
     success{
-      echo 'success
+      echo 'success'
   }
     
 }
