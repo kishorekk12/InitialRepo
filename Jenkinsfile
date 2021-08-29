@@ -10,6 +10,12 @@ pipeline {
     stage('build') {
       parallel {
         stage('build') {
+          when {
+            expression {
+              BRANCH_NAME == 'main'
+            }
+          }
+          
           steps {
             echo 'compilaton'
           }
