@@ -43,7 +43,7 @@ pipeline {
   }
   post{
     always{
-      echo 'job completed for ${VERSION}'
+      echo "job completed for ${VERSION}"
     }
     success{
       echo 'success'
