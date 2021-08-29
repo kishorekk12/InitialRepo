@@ -1,5 +1,9 @@
 pipeline {
   agent any
+  environment {
+    VERSION = '1.0'
+  }
+  
   stages {
     stage('code checkout') {
       steps {
@@ -39,7 +43,7 @@ pipeline {
   }
   post{
     always{
-       echo 'job completed'
+      echo 'job completed for ${VERSION}'
     }
     success{
       echo 'success'
